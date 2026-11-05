@@ -38,9 +38,9 @@ local LocalPlayer = Players.LocalPlayer
 if not LocalPlayer then return end
 
 -- ================= CONFIG =================
-local ICON_ASSET_ID   = 94315198453864
+local ICON_ASSET_ID   = icon, 104398014840879
 local KAITUN_ASSET_ID = 4548250991
-local BG_ASSET_ID     = 15893685449      -- gambar background (opasitas diatur di tab Tema)
+local BG_ASSET_ID     = icon, 132496154460621      -- gambar background (opasitas diatur di tab Tema)
 local DISCORD_LINK    = "https://discord.gg/6VeEjrRYy"
 local DISCORD_CODE    = "6VeEjrRYy"
 local PREMIUM_KEYS    = { ["SENAR-PREMIUM-KEY"] = true }
@@ -92,7 +92,7 @@ local function fire(name, ...)
 	local fn = UI[name]
 	if type(fn) == "function" then
 		local ok, err = pcall(fn, ...)
-		if not ok then warn("[Senar Hub] " .. name .. ": " .. tostring(err)) end
+		if not ok then warn("[Clipper Hub] " .. name .. ": " .. tostring(err)) end
 	end
 end
 
